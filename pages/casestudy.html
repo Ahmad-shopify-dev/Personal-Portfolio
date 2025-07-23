@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <title>Portfolio | Blogs</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+</head>
+<body>
+
+ 
+    <!-- HEADER SECTION START --> 
+    <header class="main-header page-width">
+        <button class="menu-toggle" aria-label="Open mobile menu">
+            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m13 16.745c0-.414-.336-.75-.75-.75h-9.5c-.414 0-.75.336-.75.75s.336.75.75.75h9.5c.414 0 .75-.336.75-.75zm9-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm-4-5c0-.414-.336-.75-.75-.75h-14.5c-.414 0-.75.336-.75.75s.336.75.75.75h14.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"/></svg>
+        </button>
+
+        <a href="../index.html" class="header-logo">
+            <img src="../assets/images/Stackwise Dev Logo Small.png" alt="Portfolio logo">
+        </a>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Casestudy</a></li>
+                <li><a href="../index.html#services">Services</a></li>
+                <li><a href="../index.html#pricings">Pricings</a></li>
+                <li><a href="../pages/products.html">Products</a></li>
+                <li class="stack_resume_trigger"><a href="../index.html#resume">Resume</a></li>
+                <li><a href="../index.html#blogs">Blogs</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <a href="#contact" class="btn-cta">Let's Connect</a>
+    </header>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-content"> <div class="drawer-header">
+                <button class="drawer-close" aria-label="Close mobile menu">
+                    <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/></svg>
+                </button>
+            </div>
+
+            <nav class="drawer-nav">
+                <ul>
+                    <li><a href="#">Casestudy</a></li>
+                    <li><a href="../index.html#services">Services</a></li>
+                    <li><a href="../index.html#pricings">Pricings</a></li>
+                    <li><a href="../pages/products.html">Products</a></li>
+                    <li class="stack_resume_trigger"><a href="../index.html#resume">Resume</a></li>
+                    <li><a href="../index.html#blogs">Blogs</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="drawer-footer">
+                <a href="#contact" class="btn-cta drawer-cta">Get a Quote</a>
+                <div class="social-icons">
+                    <a target="_blank" href="https://www.youtube.com/@stackwisedev" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg></a>
+                    <a target="_blank" href="https://www.instagram.com/stackwisedev" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                    <a target="_blank" href="https://twitter.com/stackwisedev" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/stackwisedev" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg></a>
+                    <a target="_blank" href="https://web.facebook.com/p/Stackwisedev-100086236999599" aria-label="Discord"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg></a>
+                    <a target="_blank" href="https://wa.me/+923165001019" aria-label="Whatsapp"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" id="drawerOverlay"></div>
+    <!-- HEADER SECTION END -->
+    
+    <!-- MAIN CONTENT OF THE PORTFOLIO START -->
+    <main>
+        <section class="stack_case_banner">
+            <div class="page-width">
+                <div class="stack_case_banner_inner">
+                    <h1 class="stack_case_banner_title">Case Studies</h1>
+                    <p class="stack_case_banner_subtitle">
+                    Explore our in-depth Shopify builds and real-world results achieved with powerful design, optimization, and customization.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="stack_case_studies">
+            <div class="page-width">
+                <div class="stack_case_grid">
+                    <article class="case-study-card">
+                        <img src="../assets/images/background second.jpg" alt="Project Alpha Screenshot" class="case-study-image">
+                        <div class="card-content">
+                            <a class="nav_site_link" href="https://www.google.com">Google.com</a>
+                            <h3 class="case-study-title">E-commerce Replatforming for "Alpha Brand"</h3>
+                            <p class="case-study-description">Migrated an outdated platform to a custom Shopify 2.0 theme, focusing on modularity and performance.</p>
+                            <ul class="case-study-results">
+                                <li><span>&#10003;</span> 25% faster load times</li>
+                                <li><span>&#10003;</span> 18% increase in mobile conversion</li>
+                                <li><span>&#10003;</span> Streamlined content management</li>
+                            </ul>
+                            <a href="#" class="btn-cta view-case-study-btn case_stk_button">View Case Study</a>
+                            <div class="blog_original_container visually-hidden">
+                                <img src="../assets/images/background second.jpg" alt="Project Alpha Screenshot" class="case-study-image">
+                                <h2>Alpha Brand - Full Replatforming Journey</h2>
+                                <p>Alpha Brand approached us with a legacy WooCommerce store that was slow, difficult to update, and didn’t perform well on mobile devices. We proposed a full migration to Shopify 2.0 with a custom theme built from scratch using modular sections.</p>
+                                <h3>What We Did:</h3>
+                                <ul>
+                                    <li>&#10003; Replatformed from WooCommerce to Shopify</li>
+                                    <li>&#10003; Built a fully modular custom theme</li>
+                                    <li>&#10003; Designed and developed all sections from scratch</li>
+                                    <li>&#10003; Added metafield support for dynamic content management</li>
+                                    <li>&#10003; Optimized images and scripts for faster performance</li>
+                                </ul>
+                                <h3>Impact:</h3>
+                                <p>After launch, Alpha Brand saw a 25% improvement in speed and an 18% increase in mobile conversions within the first month. Their team now edits content without developer support.</p>
+                                <h3>website design</h3>
+                                <img src="../assets/images/casestudy/Personal Portfolio WordPress Theme.jpeg" alt="case study onerror">
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="case-study-card">
+                        <img src="../assets/images/background second.jpg" alt="Project Beta Screenshot" class="case-study-image">
+                        <div class="card-content">
+                            <a class="nav_site_link" href="https://www.google.com">Google.com</a>
+                            <h3 class="case-study-title">Custom Theme for "Beta Co."</h3>
+                            <p class="case-study-description">Developed a performance-first custom theme with metafield-powered dynamic sections.</p>
+                            <ul class="case-study-results">
+                                <li><span>&#10003;</span> Fully dynamic homepage</li>
+                                <li><span>&#10003;</span> 30% improvement in SEO ranking</li>
+                                <li><span>&#10003;</span> Improved admin UX with metafields</li>
+                            </ul>
+                            <a href="#" class="btn-cta view-case-study-btn case_stk_button">View Case Study</a>
+                            <div class="blog_original_container visually-hidden">
+                                <img src="../assets/images/background second.jpg" alt="Project Alpha Screenshot" class="case-study-image">
+                                <h2>Beta Co. - Building a Performance-First Shopify Store</h2>
+                                <p>Beta Co. needed a fast, SEO-friendly Shopify store that could be easily updated by non-developers. We designed and developed a theme from the ground up using Shopify 2.0 standards and metafields to give the admin full control.</p>
+                                <h3>Key Solutions:</h3>
+                                <ul>
+                                    <li>&#10003; Built homepage with reusable, dynamic blocks</li>
+                                    <li>&#10003; Connected all content to metafields</li>
+                                    <li>&#10003; Optimized theme structure and lazy loaded assets</li>
+                                    <li>&#10003; Designed for both SEO and accessibility</li>
+                                </ul>
+                                <h3>Results:</h3>
+                                <p>Following the relaunch, Beta Co. experienced a 30% jump in organic traffic and a noticeable boost in usability. Their marketing team now launches pages without dev help.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="case-study-card">
+                        <img src="../assets/images/background second.jpg" alt="Project Gamma Screenshot" class="case-study-image">
+                        <div class="card-content">
+                            <a class="nav_site_link" href="https://www.google.com">Google.com</a>
+                            <h3 class="case-study-title">Migration and UX Redesign for "Gamma Supply"</h3>
+                            <p class="case-study-description">Revamped their online store with a mobile-first design and improved cart flow.</p>
+                            <ul class="case-study-results">
+                                <li><span>&#10003;</span> 40% drop in cart abandonment</li>
+                                <li><span>&#10003;</span> Clean UI for product discovery</li>
+                                <li><span>&#10003;</span> Built on Shopify 2.0 standards</li>
+                            </ul>
+                            <a href="#" class="btn-cta view-case-study-btn case_stk_button">View Case Study</a>
+                            <div class="blog_original_container visually-hidden">
+                                <img src="../assets/images/background second.jpg" alt="Project Alpha Screenshot" class="case-study-image">
+                                <h2>Gamma Supply - UX Overhaul & Migration</h2>
+                                <p>Gamma Supply’s outdated design and confusing cart experience were hurting conversions. We conducted UX audits, created wireframes, and rebuilt their entire frontend using modern Shopify 2.0 architecture.</p>
+                                <h3>Our Approach:</h3>
+                                <ul>
+                                    <li>&#10003; Conducted UX audits & user testing</li>
+                                    <li>&#10003; Designed mobile-first layouts</li>
+                                    <li>&#10003; Rebuilt product discovery & filtering UX</li>
+                                    <li>&#10003; Refactored cart and checkout UI for simplicity</li>
+                                </ul>
+                                <h3>Outcome:</h3>
+                                <p>After the redesign, Gamma Supply saw a 40% reduction in cart abandonment and significantly better customer feedback. The site now performs beautifully across devices.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Modal Container -->
+        <div id="case-study-modal" class="modal casestudy_modal hidden">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <div id="modal-body"><!-- Populated dynamically --></div>
+            </div>
+        </div>
+
+        <div class="stack_resume_modal" id="stackResumeModal">
+            <div class="stack_resume_backdrop"></div>
+            <div class="stack_resume_wrapper">
+                <button class="stack_resume_close" aria-label="Close Modal">&times;</button>
+                <div class="stack_resume_content">
+                    <img src="../assets/images/resume/Amad Resume Shopify.png" alt="Resume Preview" class="stack_resume_image" />
+                    <a href="../assets/images/resume/Amad Resume Shopify.pdf" class="stack_resume_download" download>Download Resume (PDF)</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- MAIN CONTENT OF THE PORTFOLIO END -->
+
+
+    <!-- STICKY ITEMS SECTION -->
+    <div class="sticky-float-card" id="stickyCard">
+        <div class="card-image">
+            <img src="../assets/images/call icon.jpg" alt="Let's Talk" />
+        </div>
+        <div class="card-content">
+            <p>Fixes? Features? Let’s connect.</p>
+            <div class="calendar-button">
+            <script>
+                (function () {
+                var target = document.currentScript;
+                window.addEventListener("load", function () {
+                    calendar.schedulingButton.load({
+                    url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3vAgm2WDXE7FJMaX1OIQ9-RC5hZkp4woiHKxUVUuEn8pEbumd7pEU1eryc42l_Vp7UaqFH9D20?gv=true",
+                    color: "#64943e",
+                    label: "Schedule a call",
+                    target,
+                    });
+                });
+                })();
+            </script>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator" id="scrollIndicator">
+        <svg viewBox="0 0 100 100">
+            <circle class="track" cx="50" cy="50" r="45" />
+            <circle class="progress" cx="50" cy="50" r="45" />
+        </svg>
+        <div class="scroll-percent" id="scrollPercent">0%</div>
+    </div>
+
+
+
+    <!-- FOOTER SECTION -->
+    <footer class="page-width">
+        <div class="main-footer">
+            <div class="footer-logo">
+                <a href="#">
+                    <img src="../assets/images/Stackwise Dev Logo dark.png" alt="Company Logo">
+                </a>
+            </div>
+    
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="../pages/products.html">Products</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="../index.html#blogs">Blogs</a></li>
+                </ul>
+            </nav>
+    
+            <div class="footer-cta">
+                <a href="mailto:your.email@example.com" class="footer-cta-button">Get a Quote</a>
+            </div>
+            <p class="footer-trust-text">
+                Great stores aren’t just built with code — they’re crafted for conversion and sustainable growth.
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="../script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+/* BANNER CSS STYLE */
+.products-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f3f4f6;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.products-banner-content {
+  flex: 1 1 400px;
+  min-width: 280px;
+}
+
+.products-banner-content h2 {
+  font-size: var(--fluid-heading);
+  margin-bottom: 1rem;
+  color: var(--color-dark);
+}
+
+.products-banner-content p {
+  font-size: var(--fluid-body);
+  color: var(--color-bodytext);
+  margin-bottom: 1.5rem;
+}
+
+.products-banner-content a {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  font-size: var(--fluid-body);
+}
+ 
+.products-banner-image {
+  flex: 1 1 400px;
+  min-width: 280px;
+  text-align: center;
+}
+
+.products-banner-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+}
+
+/* Stack layout on mobile */
+@media (max-width: 768px) {
+  .products-banner {
+    flex-direction: column-reverse; /* image below text */
+    text-align: center;
+    gap: 1rem;
+    padding: .5rem;
+  }
+
+  .products-banner-content {
+    text-align: center;
+  }
+}
+
+
+
+/* PRODUCT SECTION STYLE */
+.products-section.main-items {
+  padding: 2rem 0rem !important;
+  background-color: var(--color-light);
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: var(--fluid-subheading);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.product-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transform: translateY(40px);
+  will-change: transform, opacity;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: var(--color-bodytext);
+  margin-bottom: 1rem;
+}
+
+.feature-list {
+  padding-top: 1rem !important;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.feature-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Scroll-in animation */
+.product-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* TABS STYLE */
+.product-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.tab-button {
+  background: #f3f4f6;
+  color: #333;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: var(--fluid-body);
+  font-weight: 600;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.tab-button:hover,
+.tab-button.active {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Optional animation */
+.product-card {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.product-card.hidden {
+  display: none;
+}
+
+/* Highlighted card */
+.product-card.hire-card {
+  border: 2px solid var(--color-primary);
+  background-color: #f5fdf1;
+  position: relative;
+}
+
+/* Optional Badge */
+.product-card.hire-card::before {
+  content: "✨ Featured";
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: .3rem;
+  font-weight: 600;
+}
+
+/* Make button in this card stand out more */
+.product-card.hire-card .btn {
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  margin-top: 10px;
+  border-radius: .5rem;
+  transition: background-color 0.3s ease;
+  font-size: var(--fluid-body);
+  width: max-content;
+}
+.product-card.hire-card .btn:hover {
+  background-color: var(--color-secondary);
+}
+
+
+@media(max-width: 768px) {
+  .section-title {
+    margin-bottom: 1rem;
+  }
+}
