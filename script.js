@@ -1,3 +1,22 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+});
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.querySelector('.menu-toggle');
     const drawerClose = document.querySelector('.drawer-close');
@@ -435,6 +454,21 @@ document.addEventListener("DOMContentLoaded", function () {
       closeModal();
     }
   });
+});
+
+
+document.addEventListener('click', function (event) {
+    if (event.target.matches('.tab-button')) {
+        const clickedButton = event.target;
+        const targetTabId = clickedButton.dataset.tab;
+        const tabsContainer = clickedButton.closest('.tabs-container');
+        const tabButtons = tabsContainer.querySelectorAll('.tab-button');
+        const tabPanes = tabsContainer.querySelectorAll('.tab-pane');
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        clickedButton.classList.add('active');
+        tabPanes.forEach(pane => pane.classList.remove('active'));
+        tabsContainer.querySelector(`#${targetTabId}`).classList.add('active');
+    }
 });
 
 

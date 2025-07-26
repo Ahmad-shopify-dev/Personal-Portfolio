@@ -12,7 +12,7 @@
 }
 
 .products-banner-content {
-  flex: 1 1 400px;
+  flex: 1;
   min-width: 280px;
 }
 
@@ -41,8 +41,8 @@
 }
  
 .products-banner-image {
-  flex: 1 1 400px;
-  min-width: 280px;
+  flex: 1;
+  width: 100%;
   text-align: center;
 }
 
@@ -156,6 +156,7 @@
   border-radius: .5rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  flex-grow: unset !important;
 }
 .tab-button:hover,
 .tab-button.active {
@@ -173,23 +174,13 @@
 
 /* Highlighted card */
 .product-card.hire-card {
-  border: 2px solid var(--color-primary);
+  /* border: 2px solid var(--color-primary); */
   background-color: #f5fdf1;
   position: relative;
 }
-
-/* Optional Badge */
-.product-card.hire-card::before {
-  content: "✨ Featured";
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background-color: var(--color-primary);
-  color: white;
-  font-size: 0.5rem;
-  padding: 0.3rem 0.6rem;
-  border-radius: .3rem;
-  font-weight: 600;
+.product-card.block_theme_container {
+  align-content: center;
+  text-align: center;
 }
 
 /* Make button in this card stand out more */
